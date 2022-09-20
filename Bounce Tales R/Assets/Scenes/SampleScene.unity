@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 579777443}
   - component: {fileID: 579777442}
   - component: {fileID: 579777441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 1116126155}
   - component: {fileID: 1116126154}
   - component: {fileID: 1116126157}
+  - component: {fileID: 1116126158}
   m_Layer: 0
   m_Name: Bounce
   m_TagString: Untagged
@@ -497,12 +498,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 1.5
+  m_Material: {fileID: 6200000, guid: d682324d24f6ff44a8a2dd24d53d7ad9, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!58 &1116126155
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -548,7 +549,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  ForceVel: 10
+  ForceVel: 15
+--- !u!114 &1116126158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116126153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb836ba9f73acc4aad71df150bf939f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpForce: 1
+  Mask:
+    serializedVersion: 2
+    m_Bits: 64
+  MaxTimeJump: 0.331
 --- !u!1 &1850403596
 GameObject:
   m_ObjectHideFlags: 0

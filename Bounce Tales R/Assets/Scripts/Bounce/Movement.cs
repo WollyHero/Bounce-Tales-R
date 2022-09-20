@@ -13,7 +13,6 @@ public class Movement : MonoBehaviour
 	}
 	private void Update() {
 		axisX = Input.GetAxisRaw("Horizontal");
-		print((Vector2.right * axisX) * GetWishedVel(rb.velocity.x, ForceVel));
 	}
 	private void FixedUpdate() {
 		Move(GetWishedVel(rb.velocity.x, ForceVel), axisX);
