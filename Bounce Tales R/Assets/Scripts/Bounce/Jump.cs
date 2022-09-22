@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-	[Header("Opts")]
-	[Range(0,2)][SerializeField]private float JumpForce;
-	[Range(0,1)][SerializeField]private float MaxTimeJump;
-	[SerializeField]private LayerMask Mask;
+	[SerializeField]private Params cfg; 
 	#region PrivateStuff
 	private Rigidbody2D rb;
 	private bool CanJump;
@@ -28,23 +25,23 @@ public class Jump : MonoBehaviour
 		GetTimeElapsed();
 	}
 	private void FixedUpdate() {
-		JumpAct(JumpForce);
+		JumpAct(cfg.JumpForce);
 	}
 
 	private void JumpAct(float force){
-		if(JumpBtt() && CanJump && TimeElapsed <= MaxTimeJump){
+		if(JumpBtt() && CanJump && TimeElapsed <= cfg.MaxTimeJump){
 			rb.AddForce(Vector2.up * force , ForceMode2D.Impulse);
 		}
 	}
 	private bool IsGrounded(){
-		return Physics2D.BoxCast(transform.position - new Vector3(0, .35f, 0), new Vector3(1, .4f, 1), 0, Vector3.zero, 0 , Mask);
+		return Physics2D.BoxCast(transform.position - cfg.col[0], new Vector3(1, .4f, 1), 0, Vector3.zero, 0 , cfg.Mask);
 	}
 	private void GetTimeElapsed(){
 		/* anytime we're pressing the jump button & CanJump = true, which means that we're able to jump, then start a timer
 		 * if we stop pressing the button Jump then the timer will = to 0 and the var CanJump = false to prevent starting the timer before we're on the ground.*/ 
 		if(JumpBtt() && CanJump){
 			TimeElapsed += Time.deltaTime;
-			if(TimeElapsed >= MaxTimeJump){
+			if(TimeElapsed >= cfg.MaxTimeJump){
 				TimeElapsed = 0;
 				CanJump = false;
 			}}
@@ -59,6 +56,7 @@ public class Jump : MonoBehaviour
 	}
 	//will draw a Gizmos for the JumpColider
 	private void OnDrawGizmos() {
-		Gizmos.DrawWireCube(transform.position - new Vector3(0,.35f,0), new Vector3(1f,.4f,1));
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireCube(transform.position - cfg.col[0], new Vector3(1f,.4f,1));
 	}
 }
