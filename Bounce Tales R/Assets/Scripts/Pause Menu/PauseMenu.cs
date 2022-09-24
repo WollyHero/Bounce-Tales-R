@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    public GameObject dialogMenu;
+    public GameObject PauseMainMenu;
+
+    public GameObject RestartChapter;
+
+    public GameObject ChapterSelection;
 
     void Update () {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -22,17 +27,34 @@ public class PauseMenu : MonoBehaviour
     }
 
     
-    void Resume ()
+    public void Resume ()
     {
-        dialogMenu.SetActive(false);
+        PauseMainMenu.SetActive(false);
+        RestartChapter.SetActive(false);
+        ChapterSelection.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
     void Pause ()
     {
-        dialogMenu.SetActive(true);
+        PauseMainMenu.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    //Esto permite un cambio entre escenas.
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        Time.timeScale = 1f;
+    }
+
 }
