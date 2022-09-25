@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
+    //PauseMainMenu es el cuadro de diálogo principal.
     public GameObject PauseMainMenu;
 
     public GameObject RestartChapter;
