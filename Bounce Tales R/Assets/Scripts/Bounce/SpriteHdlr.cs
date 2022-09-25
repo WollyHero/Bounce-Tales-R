@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class SpriteHdlr : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	[SerializeField]private GameObject[] Layers;
+	[Range(0,1)][SerializeField]private float SpeedOfRotation;
+	private Rigidbody2D rb;
+	private float x;
+	private void Awake() {
+		rb = transform.GetComponent<Rigidbody2D>();
+	}
+	private void Update() {
+		RotateLayers();
+	}
+	private void RotateLayers(){
+		x -= rb.velocity.x * SpeedOfRotation;
+		foreach(GameObject Items in Layers){
+			Items.transform.localRotation = Quaternion.Euler(0,0,x);
+		}
+	}
 }
