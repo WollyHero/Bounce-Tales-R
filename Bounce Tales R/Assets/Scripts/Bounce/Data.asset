@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e78270ec4767dd4cbbbd3595f2f485c, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  col: []
-  JumpForce: 0
-  MaxTimeJump: 0
+  col:
+  - {x: 0, y: 0.32, z: 0}
+  JumpForce: 0.745
+  MaxTimeJump: 0.444
   Mask:
     serializedVersion: 2
-    m_Bits: 0
-  ForceVel: 0
+    m_Bits: 64
+  ForceVel: 15
