@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 	[HideInInspector] public Rigidbody2D rb;
-	[SerializeField]private float ForceVel;
+	[SerializeField]private Params Cfg;
 	private float axisX;
 
 	private void Awake() {
@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
 		axisX = Input.GetAxisRaw("Horizontal");
 	}
 	private void FixedUpdate() {
-		Move(GetWishedVel(rb.velocity.x, ForceVel), axisX);
+		Move(GetWishedVel(rb.velocity.x, Cfg.ForceVel), axisX);
 	}
 	private void Move(float Force, float Axis){
 		//make a Vector for the direction 
