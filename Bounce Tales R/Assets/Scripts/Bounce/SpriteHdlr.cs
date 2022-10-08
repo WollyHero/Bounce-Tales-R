@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpriteHdlr : MonoBehaviour
 {
 	[SerializeField]private GameObject[] Layers;
-	[Range(0,1)][SerializeField]private float SpeedOfRotation;
+	[Range(0,200)][SerializeField]private float SpeedOfRotation;
 	private Rigidbody2D rb;
 	private float x;
 	private void Awake() {
@@ -15,7 +15,7 @@ public class SpriteHdlr : MonoBehaviour
 		RotateLayers();
 	}
 	private void RotateLayers(){
-		x -= rb.velocity.x * SpeedOfRotation;
+		x -= rb.velocity.x * Time.deltaTime * SpeedOfRotation;
 		foreach(GameObject Items in Layers){
 			Items.transform.localRotation = Quaternion.Euler(0,0,x);
 		}
