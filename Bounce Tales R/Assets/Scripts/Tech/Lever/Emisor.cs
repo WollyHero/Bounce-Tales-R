@@ -6,13 +6,19 @@ using System;
 public class Emisor : MonoBehaviour
 {
 	[Header ("Params")]
+	[SerializeField]private Sprite SActive;
+	[SerializeField]private Sprite SInert;
 	[SerializeField]private Vector3[] Dirs;
 	[SerializeField]private GameObject[] Doors;
 	//private 
 	private bool HasActive = false;
+	private SpriteRenderer SpriteHdrl;
 	private List<Vector3>FixedDir = new List<Vector3>();
   private float timer;
 
+	private void Awake() {
+		SpriteHdrl = transform.GetComponent<SpriteRenderer>();
+	}
 	private void Start() {
 	try{
 	for (int i = 0; i < Dirs.Length; i++)
@@ -25,6 +31,7 @@ public class Emisor : MonoBehaviour
 	}
 	}
 	private void Update() {
+		ApplySprite(SActive, SInert);
 		if(HasActive){
 			timer = Time.deltaTime;
 			if(timer >= 4){
@@ -38,5 +45,13 @@ public class Emisor : MonoBehaviour
 	}
 	private void OnTriggerEnter2D(Collider2D other) {
 		HasActive = true;
+	}
+	private void ApplySprite(Sprite Active, Sprite Inert){
+		if(HasActive){
+			SpriteHdrl.sprite = Active;
+		}
+		else{
+			SpriteHdrl.sprite = Inert;
+		}
 	}
 }
