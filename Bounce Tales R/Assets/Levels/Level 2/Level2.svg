@@ -3,9 +3,11 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 8504 2268" style="enable-background:new 0 0 8504 2268;" xml:space="preserve">
 <style type="text/css">
-	.st0{display:none;}
+	.st0{display:none;opacity:0.71;}
 	.st1{fill:#0C431D;}
 	.st2{fill:#2F6400;}
+	.st3{fill:#072F13;}
+	.st4{fill:none;stroke:#072F13;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g id="Layer_1" class="st0">
 	
@@ -15264,5 +15266,63 @@ HmaQjlqKPgAAAABJRU5ErkJggg==">
 		c6.78,0,12.28,5.5,12.28,12.28v0C3686.22,1375.27,3680.72,1380.76,3673.94,1380.76z"/>
 	<path class="st2" d="M5940.67,1261.96h-159.25c-6.78,0-12.28-5.5-12.28-12.28v-3.39c0-6.78,5.5-12.28,12.28-12.28h159.25
 		c6.78,0,12.28,5.5,12.28,12.28v3.39C5952.95,1256.47,5947.45,1261.96,5940.67,1261.96z"/>
+</g>
+<g id="Layer_3">
+	<circle class="st3" cx="616.48" cy="1372.56" r="9.16"/>
+	<circle class="st3" cx="630.04" cy="1417.19" r="13.56"/>
+	<circle class="st3" cx="574.13" cy="1370.18" r="13.56"/>
+	<circle class="st3" cx="992.58" cy="1316.74" r="13.56"/>
+	<circle class="st3" cx="1030.76" cy="1376.96" r="9.95"/>
+	<circle class="st3" cx="1277.44" cy="1369.51" r="13.09"/>
+	<ellipse class="st4" cx="1535.31" cy="1499.56" rx="13.56" ry="11.91"/>
+	<ellipse class="st4" cx="1340.06" cy="1415.9" rx="13.56" ry="11.91"/>
+	<ellipse class="st4" cx="943.65" cy="1342.2" rx="13.56" ry="11.91"/>
+	<ellipse class="st4" cx="574.13" cy="1503.31" rx="13.56" ry="11.91"/>
+	<circle class="st3" cx="1664.58" cy="1565.78" r="13.09"/>
+	<circle class="st3" cx="1697.97" cy="1562.06" r="9.38"/>
+	<circle class="st3" cx="1881.99" cy="1382.25" r="13.09"/>
+	<ellipse class="st4" cx="1951.24" cy="1373.26" rx="13.56" ry="11.91"/>
+	<circle class="st3" cx="2042.09" cy="1195.22" r="13.09"/>
+	<circle class="st3" cx="2205.56" cy="1204.6" r="9.38"/>
+	<circle class="st3" cx="2338.55" cy="1252.22" r="13.09"/>
+	<circle class="st3" cx="2393.61" cy="1308.98" r="9.38"/>
+	<circle class="st3" cx="2643.49" cy="1477.54" r="13.09"/>
+	<circle class="st3" cx="2705.33" cy="1490.64" r="9.38"/>
+	<ellipse class="st4" cx="2874.53" cy="1479.11" rx="13.56" ry="11.91"/>
+	<circle class="st3" cx="3070.41" cy="1494.35" r="13.09"/>
+	<ellipse class="st3" cx="3125.06" cy="1479.35" rx="8.24" ry="9.73"/>
+	<ellipse class="st3" cx="3138.92" cy="1496.65" rx="8.24" ry="9.73"/>
+	<circle class="st3" cx="3232.76" cy="1486.92" r="13.09"/>
+	<ellipse class="st4" cx="3325.32" cy="1586.01" rx="13.56" ry="11.91"/>
+	<ellipse class="st3" cx="3366.6" cy="1588.19" rx="8.24" ry="9.73"/>
+	<circle class="st3" cx="3563.12" cy="1574.1" r="13.09"/>
+	<ellipse class="st3" cx="3774.88" cy="1384.51" rx="8.24" ry="9.73"/>
+	<circle class="st3" cx="3783.12" cy="1341.59" r="13.09"/>
+	<circle class="st3" cx="4041.42" cy="1332.55" r="13.09"/>
+	<circle class="st3" cx="4045.94" cy="1407.33" r="13.09"/>
+	<ellipse class="st3" cx="4062.76" cy="1354.68" rx="8.24" ry="9.73"/>
+	<circle class="st3" cx="4192.2" cy="1576.51" r="13.09"/>
+	<circle class="st3" cx="4294.98" cy="1730.67" r="13.09"/>
+	<ellipse class="st4" cx="4250.46" cy="1717.58" rx="13.56" ry="11.91"/>
+	<circle class="st3" cx="4450.84" cy="1857.31" r="13.09"/>
+	<ellipse class="st4" cx="4537.55" cy="1447.47" rx="13.56" ry="11.91"/>
+	<circle class="st3" cx="4523.99" cy="1394.24" r="13.09"/>
+	<circle class="st3" cx="4640.01" cy="1254.76" r="13.09"/>
+	<circle class="st3" cx="5020.34" cy="1381.14" r="13.09"/>
+	<circle class="st3" cx="5054.85" cy="1370.65" r="11.18"/>
+	<circle class="st3" cx="5298.51" cy="1317.93" r="13.09"/>
+	<ellipse class="st4" cx="6666.18" cy="1198.39" rx="13.56" ry="11.91"/>
+	<circle class="st3" cx="5232.73" cy="1310.36" r="7.56"/>
+	<circle class="st3" cx="5483.61" cy="1359.47" r="13.09"/>
+	<circle class="st3" cx="5536.45" cy="1356.34" r="9.96"/>
+	<circle class="st3" cx="5726.79" cy="1366.29" r="13.09"/>
+	<circle class="st3" cx="5767.22" cy="1364.38" r="11.18"/>
+	<circle class="st3" cx="6185.05" cy="1381.75" r="13.09"/>
+	<circle class="st3" cx="6248.91" cy="1370.58" r="11.17"/>
+	<circle class="st3" cx="6266.93" cy="1191.94" r="13.09"/>
+	<circle class="st3" cx="6692.31" cy="1217.25" r="8.17"/>
+	<circle class="st3" cx="7005.35" cy="1210.29" r="8.17"/>
+	<ellipse class="st4" cx="7255.63" cy="1237.13" rx="13.56" ry="11.91"/>
+	<ellipse class="st4" cx="7349.35" cy="1230.37" rx="13.56" ry="11.91"/>
 </g>
 </svg>

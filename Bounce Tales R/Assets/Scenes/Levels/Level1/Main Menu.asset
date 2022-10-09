@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: -0.73
+    m_Value: -0.75
   contrast:
     m_OverrideState: 0
     m_Value: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.19701493
+          time: 0.17313433
           value: 0.2611465
           inSlope: 0
           outSlope: 0
