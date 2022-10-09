@@ -13,6 +13,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject RestartChapter;
 
     public GameObject ChapterSelection;
+	
+	public GameObject WatermarkText;
 
     void Update () {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -35,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         ChapterSelection.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+		WatermarkText.SetActive(true);
     }
 
     void Pause ()
@@ -42,6 +45,7 @@ public class PauseMenu : MonoBehaviour
         PauseMainMenu.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+		WatermarkText.SetActive(false);
     }
 
     //Esto permite un cambio entre escenas.
