@@ -14,21 +14,23 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject ChapterSelection;
 
-    void Update () {
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if (GameIsPaused)
             {
                 Resume();
-            } else
+            }
+            else
             {
                 Pause();
-            }       
+            }
         }
     }
 
-    
-    public void Resume ()
+
+    public void Resume()
     {
         PauseMainMenu.SetActive(false);
         RestartChapter.SetActive(false);
@@ -37,7 +39,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
-    void Pause ()
+    void Pause()
     {
         PauseMainMenu.SetActive(true);
         Time.timeScale = 0f;
