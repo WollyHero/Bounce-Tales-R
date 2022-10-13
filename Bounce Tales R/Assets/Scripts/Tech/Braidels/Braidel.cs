@@ -6,12 +6,13 @@ public class Braidel : MonoBehaviour
 {
     [SerializeField]private Transform[] Positions;
     [SerializeField]private float Speed;
+		[SerializeField]private Transform BraidelB;
     private int index = 0;
     private void Update(){
 	if(transform.position != Positions[index].position){
-	    transform.position = Vector3.MoveTowards(transform.position, Positions[index].position,Speed * Time.deltaTime);
+	  BraidelB.position = Vector3.MoveTowards(BraidelB.position, Positions[index].position,Speed * Time.deltaTime);
 	}
-	if((transform.position - Positions[index].position).magnitude <= .2f){
+	if((BraidelB.position - Positions[index].position).magnitude <= .2f){
 	    if(index +1 > Positions.Length -1){
 		index = 0;
 	    }
