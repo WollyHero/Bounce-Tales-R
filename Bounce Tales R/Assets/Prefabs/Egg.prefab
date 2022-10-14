@@ -168,3 +168,4 @@ MonoBehaviour:
   DestroyHe: {fileID: 5705161591398691959}
   Coliders:
   - {fileID: 5705161591398691958}
+  handler: {fileID: 6150955144370091235, guid: af52a768163aedf498ee14dd36f13d32, type: 3}
