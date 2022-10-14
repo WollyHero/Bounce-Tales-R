@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 
 	private void Awake() {
 		rb = transform.GetComponent<Rigidbody2D>();
+		transform.tag = "Bounce";
 	}
 	private void Update() {
 		axisX = Input.GetAxisRaw("Horizontal");
