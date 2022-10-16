@@ -42,3 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Parallax
+    uniqueID: 3868982047
+    locked: 0
+  - name: Level
+    uniqueID: 2799263599
+    locked: 0
+  - name: Objects
+    uniqueID: 3330314989
+    locked: 0
+  - name: Bounce
+    uniqueID: 547265311
+    locked: 0
