@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4877599098454455045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.556047, y: 1.496284, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3524054, y: 0.3524054, z: 0.3524054}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3176790026872453556}
   m_Layer: 0
-  m_Name: Air
+  m_Name: Wind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6138533151943345793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.02, y: -2.11, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.837641, y: 2.837641, z: 2.837641}
   m_ConstrainProportionsScale: 0
   m_Children:

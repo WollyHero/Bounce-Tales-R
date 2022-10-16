@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 8228542128567105101}
   - component: {fileID: 1390189464673351123}
   m_Layer: 0
-  m_Name: Braiel
+  m_Name: Braidel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4573508858089562366}
   m_Layer: 0
-  m_Name: BraidelBody
+  m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

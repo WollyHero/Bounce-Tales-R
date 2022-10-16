@@ -557,11 +557,10 @@ GameObject:
   - component: {fileID: 1323950872}
   - component: {fileID: 786388014225146882}
   - component: {fileID: 1323950866}
-  - component: {fileID: 1116126162}
   - component: {fileID: 1116126163}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Bounce
-  m_TagString: Untagged
+  m_TagString: Bounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,39 +774,7 @@ MonoBehaviour:
   - {x: -0.19716752, y: -0.5551289, z: 0}
   m_ShapePathHash: 1394027758
   m_Mesh: {fileID: 0}
-  m_InstanceId: -24576
---- !u!114 &1116126162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786388015775956210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000
-  m_ShapePath:
-  - {x: -0.454877, y: -0.36233473, z: 0}
-  - {x: -0.5470891, y: 0.20906365, z: 0}
-  - {x: -0.40320694, y: 0.4268222, z: 0}
-  - {x: 0.6, y: 0.6, z: 0}
-  - {x: 0.38336706, y: -0.43174148, z: 0}
-  - {x: 0.1567207, y: -0.5581751, z: 0}
-  - {x: 0.028423533, y: -0.58131063, z: 0}
-  - {x: -0.108286574, y: -0.5644848, z: 0}
-  - {x: -0.25761607, y: -0.5182136, z: 0}
-  m_ShapePathHash: -1025971879
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 57930
+  m_InstanceId: 127560
 --- !u!114 &1116126163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0748d257c1f91f46939f247755f21d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IddlePoint: 10
+  IddlePoint: 4
   VC: {fileID: 0}
 --- !u!1 &786388016167860484
 GameObject:

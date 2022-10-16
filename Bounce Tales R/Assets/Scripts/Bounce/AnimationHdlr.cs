@@ -23,11 +23,11 @@ public class AnimationHdlr : MonoBehaviour
 	if(Mathf.Abs(input) > .2f || inputjump == true){
 	    timer = 0;
 	    AnimState = false;
-	    VC.m_Lens.OrthographicSize = Mathf.Lerp(VC.m_Lens.OrthographicSize, 5, Time.deltaTime * 2);
+	    VC.m_Lens.OrthographicSize = Mathf.Lerp(VC.m_Lens.OrthographicSize, 10, Time.deltaTime * 2);
 	}
 	if(timer > IddlePoint){
 	    AnimState = true;
-	    VC.m_Lens.OrthographicSize = Mathf.Lerp(VC.m_Lens.OrthographicSize, 3, Time.deltaTime * 2);
+	    VC.m_Lens.OrthographicSize = Mathf.Lerp(VC.m_Lens.OrthographicSize, 7, Time.deltaTime * 2);
 	}
 	ApplyAnimState(AnimState);
     }
