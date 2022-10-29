@@ -23,15 +23,13 @@ public class Emisor : MonoBehaviour
     private List<Vector3> FixedDir = new List<Vector3>();
     private float timer;
     private GameObject BounceGameObj;
-    private Rigidbody2D rbbounce;
 
     private void Awake()
     {
         SpriteHdrl = transform.GetComponent<SpriteRenderer>();
         BounceGameObj = Vcam.Follow.gameObject;
         MovBounce = BounceGameObj.transform.GetComponent<Movement>();
-	JumpScriptFromBounce = BounceGameObj.transform.GetComponent<Jump>();
-        rbbounce = BounceGameObj.transform.GetComponent<Rigidbody2D>();
+        JumpScriptFromBounce = BounceGameObj.transform.GetComponent<Jump>();
     }
     private void Start()
     {
@@ -91,8 +89,8 @@ public class Emisor : MonoBehaviour
         if (MovBounce != null && JumpScriptFromBounce != null)
         {
             MovBounce.enabled = x;
-	    JumpScriptFromBounce.enabled = x;
-            rbbounce.AddForce((rbbounce.velocity / 2) * -1);
-    }
+            JumpScriptFromBounce.enabled = x;
+            Handlers.main.BounceMov.rb.AddForce((Handlers.main.BounceMov.rb.velocity / 2) * -1);
+        }
     }
 }

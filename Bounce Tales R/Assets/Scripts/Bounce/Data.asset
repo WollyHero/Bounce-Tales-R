@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col:
   - {x: 0, y: 0.61, z: 0}
-  JumpForce: 0.74
-  MaxTimeJump: 0.44
+  JumpForce: 0.5
+  MaxTimeJump: 0.54
   Mask:
     serializedVersion: 2
     m_Bits: 64
-  ForceVel: 15
+  ForceVel: 13

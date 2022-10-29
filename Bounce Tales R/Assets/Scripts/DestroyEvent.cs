@@ -7,33 +7,33 @@ public class DestroyEvent : MonoBehaviour
     [SerializeField] private float TimeToDestroy;
     [SerializeField] private bool StateParent = true;
     private bool HasCalled;
-		private Collider2D[] colliders;
+    private Collider2D[] colliders;
     private bool HasInst = false;
     private GameObject[] ObjPassed;
     private List<GameObject> Instances = new List<GameObject>();
     private GameObject[] Particle;
     private float Timer;
-		
+
     private void Update()
     {
         if (HasCalled)
         {
             Timer += Time.deltaTime;
-						foreach(var items in ObjPassed){
-            	items.SetActive(StateParent);
-						}
-						foreach(Collider2D items in colliders){
-							items.enabled = false;
-						}
+            foreach (var items in ObjPassed)
+            {
+                items.SetActive(StateParent);
+            }
+            foreach (Collider2D items in colliders)
+            {
+                items.enabled = false;
+            }
             if (!HasInst)
             {
                 foreach (var item in Particle)
                 {
-                    Instances.Add(Instantiate(item, ObjPassed[0].transform.position, Quaternion.identity));
-                }
-                foreach (var item in Instances)
-                {
-                    item.transform.parent = this.transform.parent;
+                    GameObject ins = Instantiate(item, ObjPassed[0].transform.position, Quaternion.identity);
+                    ins.transform.parent = this.transform;
+
                 }
                 HasInst = true;
             }
@@ -45,7 +45,7 @@ public class DestroyEvent : MonoBehaviour
     }
     public void DestroyEnh(GameObject[] Listener, Collider2D[] Colliders, GameObject[] Particle)
     {
-				this.colliders = Colliders;
+        this.colliders = Colliders;
         ObjPassed = Listener;
         this.Particle = Particle;
         HasCalled = true;
