@@ -13,6 +13,7 @@ public class DestroyEvent : MonoBehaviour
     private List<GameObject> Instances = new List<GameObject>();
     private GameObject[] Particle;
     private float Timer;
+    [SerializeField] private GameObject[] Exclude;
 
     private void Update()
     {
@@ -31,9 +32,25 @@ public class DestroyEvent : MonoBehaviour
             {
                 foreach (var item in Particle)
                 {
-                    GameObject ins = Instantiate(item, ObjPassed[0].transform.position, Quaternion.identity);
-                    ins.transform.parent = this.transform;
+                    Instances.Add(Instantiate(item, ObjPassed[0].transform.position, Quaternion.identity));
 
+                }
+                foreach (var item in Instances)
+                {
+                    if (Exclude.Length > 0)
+                    {
+                        foreach (var excl in Exclude)
+                        {
+                            if (!item.name.StartsWith(excl.name))
+                            {
+                                item.transform.parent = this.transform;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        item.transform.parent = this.transform;
+                    }
                 }
                 HasInst = true;
             }
