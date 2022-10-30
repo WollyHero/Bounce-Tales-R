@@ -16,8 +16,8 @@ public class Params : ScriptableObject
     private void OnEnable()
     {
         col[0] = new Vector3(0, .61f, 0);
-        JumpForce = .5f;
-        MaxTimeJump = .54f;
+        JumpForce = .89f;
+        MaxTimeJump = .26f;
         Mask = LayerMask.GetMask("Ground");
         ForceVel = 13;
     }

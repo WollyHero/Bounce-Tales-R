@@ -261,7 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0793491e2910194987311a69c6d7d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bounce: {fileID: 0}
   ForceToPush: 10
 --- !u!61 &547181737899985562
 BoxCollider2D:
@@ -339,6 +338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToDestroy: 4
   StateParent: 0
+  Exclude:
+  - {fileID: 5705161591398691953, guid: de05a3428f4d50f40b36f1512ce47213, type: 3}
 --- !u!114 &1390189464673351123
 MonoBehaviour:
   m_ObjectHideFlags: 0
