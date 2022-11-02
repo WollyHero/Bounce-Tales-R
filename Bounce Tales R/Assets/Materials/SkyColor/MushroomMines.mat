@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sky
+  m_Name: MushroomMines
   m_Shader: {fileID: -6465566751694194690, guid: df2f800e9e7176143816b108af536435, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -50,6 +50,6 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _BottomColor: {r: 0.41037738, g: 0.8231131, b: 1, a: 1}
-    - _TopColor: {r: 0.16834284, g: 0.534201, b: 0.9150943, a: 1}
+    - _BottomColor: {r: 0.6117647, g: 0.9882353, b: 0.9882353, a: 1}
+    - _TopColor: {r: 0.43137255, g: 0.8352941, b: 0.7882353, a: 1}
   m_BuildTextureStacks: []
