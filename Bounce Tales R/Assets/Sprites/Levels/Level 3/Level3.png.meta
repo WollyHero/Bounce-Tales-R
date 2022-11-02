@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 986154c01fe2d164ba4c97a806865236
+guid: a2bd63af254b3704aad4d2a900962f6e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,70 +103,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Environment_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 1468
-        width: 759
-        height: 1102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3ecc1cceaaef8949b20dbe8e9dd2809
-      internalID: 2045998083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Environment_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 27
-        width: 999
-        height: 791
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4f660c19a809a24794587364874bdee
-      internalID: 1090541793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Environment_2
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 820
-        width: 659
-        height: 645
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7094871e09840a4f8d4798883e72de3
-      internalID: 1849887007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -178,9 +115,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Environment_2: 1849887007
-      Environment_0: 2045998083
-      Environment_1: 1090541793
+      Level3_0: -740666922
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
