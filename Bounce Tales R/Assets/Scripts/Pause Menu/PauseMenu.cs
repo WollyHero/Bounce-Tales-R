@@ -7,14 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    //PauseMainMenu es el cuadro de diálogo principal.
-    public GameObject PauseMainMenu;
-
-    public GameObject RestartChapter;
-
-    public GameObject ChapterSelection;
-	
-	public GameObject WatermarkText;
+    public GameObject PauseMainMenu, RestartChapter, ChapterSelection, WatermarkText, VFX;
 
     void Update()
     {
@@ -37,24 +30,24 @@ public class PauseMenu : MonoBehaviour
         PauseMainMenu.SetActive(false);
         RestartChapter.SetActive(false);
         ChapterSelection.SetActive(false);
+		VFX.SetActive(true);
+		WatermarkText.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
-		WatermarkText.SetActive(true);
     }
 
     void Pause()
     {
         PauseMainMenu.SetActive(true);
+		WatermarkText.SetActive(false);
+		VFX.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
-		WatermarkText.SetActive(false);
     }
-
-    //Esto permite un cambio entre escenas.
 
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Time.timeScale = 1f;
     }
 
