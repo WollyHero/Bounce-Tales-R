@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    public GameObject PauseMainMenu, RestartChapter, ChapterSelection, WatermarkText, VFX;
+    public GameObject PauseMainMenu, RestartChapter, ChapterSelection, WatermarkText;
 
     void Update()
     {
@@ -30,7 +30,6 @@ public class PauseMenu : MonoBehaviour
         PauseMainMenu.SetActive(false);
         RestartChapter.SetActive(false);
         ChapterSelection.SetActive(false);
-		VFX.SetActive(true);
 		WatermarkText.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -40,7 +39,6 @@ public class PauseMenu : MonoBehaviour
     {
         PauseMainMenu.SetActive(true);
 		WatermarkText.SetActive(false);
-		VFX.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
