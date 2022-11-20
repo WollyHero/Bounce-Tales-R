@@ -198,8 +198,8 @@ MonoBehaviour:
   - {fileID: 7400535413931718451}
   - {fileID: 76534621828376246}
   m_Bounds:
-    m_Center: {x: -0.024154186, y: 0.0015964508, z: 0}
-    m_Extent: {x: 3.9728475, y: 3.7634006, z: 0}
+    m_Center: {x: -0.024156332, y: 0.0015990734, z: -0.000000027731858}
+    m_Extent: {x: 3.9728475, y: 3.7634006, z: 8.881784e-16}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -401,8 +401,8 @@ MonoBehaviour:
   - {fileID: 7786405056668401864}
   - {fileID: 4766510663606773836}
   m_Bounds:
-    m_Center: {x: -0.00000023841858, y: -0.00019901991, z: 0}
-    m_Extent: {x: 1.5550002, y: 0.90149534, z: 0}
+    m_Center: {x: -0.0000011920929, y: -0.00019586086, z: -0.000000027731858}
+    m_Extent: {x: 1.5550004, y: 0.90149534, z: 8.881784e-16}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -512,8 +512,8 @@ MonoBehaviour:
   - {fileID: 7400535413931718451}
   - {fileID: 4766510663606773836}
   m_Bounds:
-    m_Center: {x: 0.000003695488, y: -0.0015449524, z: 0}
-    m_Extent: {x: 1.9950004, y: 2.5884557, z: 0}
+    m_Center: {x: -0.00000071525574, y: -0.0015442371, z: -0.000000027731858}
+    m_Extent: {x: 1.9950005, y: 2.5884552, z: 8.881784e-16}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -606,7 +606,7 @@ Transform:
   m_GameObject: {fileID: 6316651674356548138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.267214, y: 0.267214, z: 0.267214}
+  m_LocalScale: {x: 0.2884575, y: 0.2884575, z: 0.2884575}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6636171666460268533}
@@ -773,8 +773,8 @@ MonoBehaviour:
   - {fileID: 76534621828376246}
   - {fileID: 4027631725449402519}
   m_Bounds:
-    m_Center: {x: 0.00055491924, y: -0.0012388229, z: 0}
-    m_Extent: {x: 1.2844452, y: 1.8637652, z: 0}
+    m_Center: {x: 0.00055372715, y: -0.0012370348, z: -0.000000027731858}
+    m_Extent: {x: 1.2844448, y: 1.8637649, z: 1.7763568e-15}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
