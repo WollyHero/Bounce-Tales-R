@@ -5,6 +5,7 @@ public class WaterScipt : MonoBehaviour
     [SerializeField]
     private GameObject Particle_1,
         Particle_2;
+    private BuoyancyEffector2D Efector;
 
     private bool IsOnWater()
     {
@@ -16,8 +17,12 @@ public class WaterScipt : MonoBehaviour
     private ContactFilter2D cf2;
     private LayerMask mask;
 
+    [SerializeField]
+    private Params BParams;
+
     private void Awake()
     {
+        Efector = transform.GetComponent<BuoyancyEffector2D>();
         mask = LayerMask.GetMask("Bounce");
         col = transform.GetComponent<Collider2D>();
         cf2.useLayerMask = true;
@@ -28,6 +33,9 @@ public class WaterScipt : MonoBehaviour
     //instanciate the Particle at point.
     private void Update()
     {
+        //aply the Density
+        Efector.density = BParams.density;
+        Efector.linearDrag = BParams.linearDrag;
         if (IsOnWater())
         {
             timer += Time.deltaTime;
