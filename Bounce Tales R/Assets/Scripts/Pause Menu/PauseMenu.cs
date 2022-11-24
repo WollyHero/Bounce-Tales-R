@@ -7,7 +7,10 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    public GameObject PauseMainMenu, RestartChapter, ChapterSelection, WatermarkText;
+    public GameObject PauseMainMenu,
+        RestartChapter,
+        ChapterSelection,
+        WatermarkText;
 
     void Update()
     {
@@ -24,13 +27,12 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-
     public void Resume()
     {
         PauseMainMenu.SetActive(false);
         RestartChapter.SetActive(false);
         ChapterSelection.SetActive(false);
-		WatermarkText.SetActive(true);
+        WatermarkText.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
@@ -38,7 +40,7 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         PauseMainMenu.SetActive(true);
-		WatermarkText.SetActive(false);
+        WatermarkText.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
@@ -54,5 +56,4 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
         Time.timeScale = 1f;
     }
-
 }
