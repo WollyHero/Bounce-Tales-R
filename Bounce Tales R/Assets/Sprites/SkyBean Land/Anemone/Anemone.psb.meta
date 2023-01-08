@@ -90,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Petal
@@ -786,7 +787,8 @@ ScriptedImporter:
     - {x: 54, y: 55}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -229, y: -425}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 233, y: 429}
   - name: Leaf 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1182,7 +1184,8 @@ ScriptedImporter:
     - {x: 27, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -736, y: 1271}
+    uvTransform: {x: 4, y: 1291}
+    spritePosition: {x: 740, y: 20}
   - name: Stem
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1672,7 +1675,8 @@ ScriptedImporter:
     - {x: 33, y: 34}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -430, y: 765}
+    uvTransform: {x: 4, y: 765}
+    spritePosition: {x: 434, y: 0}
   - name: Leaf 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2148,7 +2152,8 @@ ScriptedImporter:
     - {x: 25, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -376, y: 1485}
+    uvTransform: {x: 4, y: 1672}
+    spritePosition: {x: 380, y: 187}
   characterData:
     bones:
     - name: bone_1

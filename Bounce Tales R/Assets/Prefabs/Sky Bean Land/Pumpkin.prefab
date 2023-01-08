@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7109344105437787391}
   - component: {fileID: 7109344105437787390}
+  - component: {fileID: 9177987211461630179}
+  - component: {fileID: 5176918073304275072}
   m_Layer: 0
   m_Name: Pumpkin
   m_TagString: Untagged
@@ -84,3 +86,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &9177987211461630179
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109344105437787389}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.633805, y: -7.7403445}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 40.96, y: 29.88}
+    newSize: {x: 40.96, y: 29.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.252187, y: 14.399312}
+  m_EdgeRadius: 0
+--- !u!114 &5176918073304275072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109344105437787389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 533b1d319efeeed418ba2eb94f705d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endAnimation: {fileID: 0}

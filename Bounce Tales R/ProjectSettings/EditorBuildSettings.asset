@@ -15,6 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Sky Bean Land/Level1.unity
     guid: 09b15d50ee3b21a4291609fa3521b77b
   - enabled: 1
-    path: Assets/Scenes/Sandbox/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Levels/Sky Bean Land/Level 2.unity
+    guid: 447722ea5169e044cb1875a57e96e99e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Sky Bean Land/Level3.unity
+    guid: f6b4827ba3be6ca43bef47210fdc9f40
+  - enabled: 1
+    path: Assets/Scenes/Levels/Sky Bean Land/Level4.unity
+    guid: 4f9151dead7db7d40ac17a2cec5a339b
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bonus/Level 5.unity
+    guid: b28ffdf40cb8dae40b5d7132c047eba2
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mushroom Mines/Level 6.unity
+    guid: dfc701e1f1278bd4a888cad2f6d8b4fc
   m_configObjects: {}
