@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bounce
   - Egg
+  - Dust
   layers:
   - Default
   - TransparentFX

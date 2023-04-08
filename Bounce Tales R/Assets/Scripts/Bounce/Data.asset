@@ -15,8 +15,10 @@ MonoBehaviour:
   col:
   - {x: 0, y: 0.61, z: 0}
   JumpForce: 0.89
-  MaxTimeJump: 0.24
+  MaxTimeJump: 0.26
   Mask:
     serializedVersion: 2
     m_Bits: 64
   ForceVel: 13
+  density: 0.4
+  linearDrag: 2

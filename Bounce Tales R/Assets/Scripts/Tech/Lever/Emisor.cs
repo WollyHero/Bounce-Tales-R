@@ -7,13 +7,12 @@ using System;
 public class Emisor : MonoBehaviour
 {
     [Header("Params")]
-    [SerializeField] private Sprite SActive;
-    [SerializeField] private Sprite SInert;
     [SerializeField] private Vector3[] Dirs;
     [SerializeField] private GameObject[] Doors;
     [SerializeField] private Transform CamPos;
     [SerializeField] private CinemachineVirtualCamera Vcam;
     [SerializeField] private float TimeToMoveTheCamera;
+    [SerializeField] private Animator leverAnimator;
     //private 
     private bool HasActive = false;
     private Movement MovBounce;
@@ -23,6 +22,7 @@ public class Emisor : MonoBehaviour
     private List<Vector3> FixedDir = new List<Vector3>();
     private float timer;
     private GameObject BounceGameObj;
+
 
     private void Awake()
     {
@@ -47,7 +47,6 @@ public class Emisor : MonoBehaviour
     }
     private void Update()
     {
-        ApplySprite(SActive, SInert);
         if (HasActive && PreventClosing)
         {
             timer += Time.deltaTime;
@@ -69,10 +68,6 @@ public class Emisor : MonoBehaviour
 
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        HasActive = true;
-    }
     private void ApplySprite(Sprite Active, Sprite Inert)
     {
         if (HasActive)
@@ -91,6 +86,15 @@ public class Emisor : MonoBehaviour
             MovBounce.enabled = x;
             JumpScriptFromBounce.enabled = x;
             Handlers.main.BounceMov.rb.AddForce((Handlers.main.BounceMov.rb.velocity / 2) * -1);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Bounce"))
+        {
+            leverAnimator.SetBool("Activated",true); 
+            HasActive = true;
         }
     }
 }
