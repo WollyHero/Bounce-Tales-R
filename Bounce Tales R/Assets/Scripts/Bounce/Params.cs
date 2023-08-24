@@ -9,7 +9,6 @@ public class Params : ScriptableObject
     public Vector3[] col;
 
     [Header("Jump // Opts")]
-    [Range(0, 1)]
     public float JumpForce;
 
     [Range(0, 1)]

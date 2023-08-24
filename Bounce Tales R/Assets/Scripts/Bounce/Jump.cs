@@ -1,75 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Jump : MonoBehaviour
-{
-    [SerializeField] private Params cfg;
-    #region PrivateStuff
-    private Rigidbody2D rb;
-    private bool CanJump;
-    private float TimeElapsed = 0;
-    #endregion
+public class Jump : MonoBehaviour {
+	[SerializeField]
+	private Params cfg;
+	[SerializeField]
+	private float JumpHeight;
+	[SerializeField]
+	private float RatioCancel;
 
-    private void Awake()
-    {
-        rb = transform.GetComponent<Rigidbody2D>();
-    }
+	private float TimeButtonIsPressed;
+	private Rigidbody2D rb;
+	private bool jumpCancel = false;
 
-    private void Update()
-    {
-        /*
-		 * anytime we're on the ground the var: CanJump will be = true.
-		 * */
-        if (IsGrounded())
-            CanJump = true;
-        //update the TimeElapsed Var.
-        GetTimeElapsed();
-    }
-    private void FixedUpdate()
-    {
-        JumpAct(cfg.JumpForce);
-    }
+	private void Awake() {
+		// TODO: make a singleton for this shit
+		rb = transform.GetComponent<Rigidbody2D>();
+	}
+	private void Update() {
+		if (Input.GetButton("Jump"))
+			TimeButtonIsPressed += Time.deltaTime;
 
-    private void JumpAct(float force)
-    {
-        if (JumpBtt() && CanJump && TimeElapsed <= cfg.MaxTimeJump)
-        {
-            rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
-        }
-    }
-    private bool IsGrounded()
-    {
-        return Physics2D.BoxCast(transform.position - cfg.col[0], new Vector3(1, .4f, 1), 0, Vector3.zero, 0, cfg.Mask);
-    }
-    private void GetTimeElapsed()
-    {
-        /* anytime we're pressing the jump button & CanJump = true, which means that we're able to jump, then start a timer
-		 * if we stop pressing the button Jump then the timer will = to 0 and the var CanJump = false to prevent starting the timer before we're on the ground.*/
-        if (JumpBtt() && CanJump)
-        {
-            TimeElapsed += Time.deltaTime;
-            if (TimeElapsed >= cfg.MaxTimeJump)
-            {
-                TimeElapsed = 0;
-                CanJump = false;
-            }
-        }
-        else
-        {
-            TimeElapsed = 0;
-            if (!IsGrounded())
-                CanJump = false;
-        }
-    }
-    private bool JumpBtt()
-    {
-        return Input.GetButton("Jump");
-    }
-    //will draw a Gizmos for the JumpColider
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position - cfg.col[0], new Vector3(1f, .4f, 1));
-    }
+		if (IsGrounded()) {  // just reset evrything to their normal state>
+			rb.gravityScale = 1;
+			jumpCancel = false;
+		}
+		if (Input.GetButtonDown("Jump")) {
+			rb.AddForce(new Vector2(0, JumpFormula(JumpHeight)), ForceMode2D.Impulse);
+		}
+		if (Input.GetButtonUp("Jump") || TimeButtonIsPressed > 1f) {
+			TimeButtonIsPressed = 0;  // reset the timer to avoid bugs.
+			jumpCancel = true;
+		}
+	}
+	private void FixedUpdate() {
+		if (jumpCancel) {  // Gradually apply force whenever you cancel the jump.
+			rb.AddForce(new Vector2(0, RatioCancel));
+		}
+	}
+	/*
+	 * Output -> Bool: is box raycast colliding with any object with a certain mask (TODO: get
+	 * rid of the fucking cfg variable :rage:
+	 */
+	private bool IsGrounded() {
+		return Physics2D.BoxCast(transform.position - cfg.col[0], new Vector3(1, .4f, 1), 0,
+					 Vector3.zero, 0, cfg.Mask);
+	}
+
+	/*
+	 * Input -> Float: Height (Desired Height to achive)
+	 * Output -> Float: Force needed to achive Height
+	 */
+	private float JumpFormula(float Height) {
+		return Mathf.Sqrt(-2.0f * Physics2D.gravity.y * Height);
+	}
 }
