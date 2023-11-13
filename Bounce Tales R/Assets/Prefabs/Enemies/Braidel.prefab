@@ -47,12 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Particles:
   - {fileID: 7269347454738016330, guid: 1da3502e1df9c3e4bb833a602e2e74cb, type: 3}
-  - {fileID: 5705161591398691953, guid: de05a3428f4d50f40b36f1512ce47213, type: 3}
+  - {fileID: 5705161591398691953, guid: b49bbeca3a18fe549a1aeaafcc70fb14, type: 3}
   Send:
   - {fileID: 5065857480925013433}
   ColSend:
   - {fileID: 1065196518240592606}
-  DE: {fileID: 8228542128567105101}
+  destroy_event: {fileID: 8228542128567105101}
   ForcePush: 500
 --- !u!61 &1065196518240592606
 BoxCollider2D:
@@ -197,7 +197,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 4d5e1343ed29c424085837c0dfe3cd8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -231,7 +231,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &5065857480925013438
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -248,7 +248,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &427763580557017859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +340,7 @@ MonoBehaviour:
   TimeToDestroy: 4
   StateParent: 0
   Exclude:
-  - {fileID: 5705161591398691953, guid: de05a3428f4d50f40b36f1512ce47213, type: 3}
+  - {fileID: 5705161591398691953, guid: b49bbeca3a18fe549a1aeaafcc70fb14, type: 3}
 --- !u!114 &1390189464673351123
 MonoBehaviour:
   m_ObjectHideFlags: 0

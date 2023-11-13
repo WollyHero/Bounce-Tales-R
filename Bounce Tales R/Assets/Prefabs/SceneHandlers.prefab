@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2196290253911536726}
   - component: {fileID: 2196290253911536721}
+  - component: {fileID: 7131087085837784728}
   m_Layer: 0
   m_Name: SceneHandlers
   m_TagString: Untagged
@@ -44,6 +45,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9131b0dee57fea543a920718d169b161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PublicParams: {fileID: 0}
   EggsCount: 0
   TimeElapsed: 0
   BounceMov: {fileID: 0}
+  respawnScript: {fileID: 0}
+--- !u!114 &7131087085837784728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196290253911536720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb98bb75d96652c41a180c3390ec68ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vcam: {fileID: 0}
+  animduration: 2.5

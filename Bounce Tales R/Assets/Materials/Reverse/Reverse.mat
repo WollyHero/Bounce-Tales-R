@@ -70,5 +70,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Reverse: {r: 1.1e-44, g: 1.1e-44, b: 1.1e-44, a: 0}
+    - _Reverse: {r: 0.0003626965, g: 0.0003626965, b: 0.0003626965, a: 0}
   m_BuildTextureStacks: []

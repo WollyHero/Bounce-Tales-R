@@ -1,14 +1,11 @@
 using UnityEngine;
 
-public class WaterScipt : MonoBehaviour
-{
+public class WaterScipt : MonoBehaviour {
     [SerializeField]
-    private GameObject Particle_1,
-        Particle_2;
+    private GameObject Particle_1, Particle_2;
     private BuoyancyEffector2D Efector;
 
-    private bool IsOnWater()
-    {
+    private bool IsOnWater() {
         return col.IsTouching(cf2);
     }
 
@@ -20,8 +17,7 @@ public class WaterScipt : MonoBehaviour
     [SerializeField]
     private Params BParams;
 
-    private void Awake()
-    {
+    private void Awake() {
         Efector = transform.GetComponent<BuoyancyEffector2D>();
         mask = LayerMask.GetMask("Bounce");
         col = transform.GetComponent<Collider2D>();
@@ -30,22 +26,16 @@ public class WaterScipt : MonoBehaviour
         cf2.layerMask = mask;
     }
 
-    //instanciate the Particle at point.
-    private void Update()
-    {
-        //aply the Density
+    // instanciate the Particle at point.
+    private void Update() {
+        // aply the Density
         Efector.density = BParams.density;
         Efector.linearDrag = BParams.linearDrag;
-        if (IsOnWater())
-        {
+        if (IsOnWater()) {
             timer += Time.deltaTime;
-            if (timer > 1.3f)
-            {
-                Instantiate(
-                    Particle_2,
-                    Handlers.main.BounceMov.transform.position,
-                    Quaternion.identity
-                );
+            if (timer > 1.3f) {
+                Instantiate(Particle_2, Handlers.main.BounceMov.transform.position,
+                            Quaternion.identity);
                 timer = 0;
             }
             return;
@@ -53,8 +43,7 @@ public class WaterScipt : MonoBehaviour
         timer = 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
+    private void OnTriggerEnter2D(Collider2D other) {
         Vector2 CollisionPoint = other.transform.position;
         Instantiate(Particle_1, CollisionPoint, Quaternion.identity);
     }

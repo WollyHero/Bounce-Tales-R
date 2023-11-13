@@ -7,6 +7,8 @@ TagManager:
   - Bounce
   - Egg
   - Dust
+  - Checkpoint
+  - Camera
   layers:
   - Default
   - TransparentFX

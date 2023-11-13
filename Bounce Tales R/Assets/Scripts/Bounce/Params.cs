@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Data", menuName = "Params/NewData")]
-public class Params : ScriptableObject
-{
+public class Params : ScriptableObject {
     [Header("General // Opts")]
     public Vector3[] col;
 
@@ -19,9 +18,7 @@ public class Params : ScriptableObject
     public float ForceVel;
     public float density;
     public float linearDrag;
-
-    private void OnEnable()
-    {
+    private void OnEnable() {
         col[0] = new Vector3(0, .61f, 0);
         JumpForce = .89f;
         MaxTimeJump = .26f;

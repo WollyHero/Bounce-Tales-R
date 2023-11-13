@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 4d5e1343ed29c424085837c0dfe3cd8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5705161591398691959}
   - component: {fileID: 5705161591398691958}
   - component: {fileID: 5705161591398691957}
+  - component: {fileID: 4232580854461159642}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Untagged
@@ -149,7 +150,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.21936369, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7193637
+  m_Radius: 1.32
 --- !u!114 &5705161591398691957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,3 +171,16 @@ MonoBehaviour:
   Coliders:
   - {fileID: 5705161591398691958}
   handler: {fileID: 6150955144370091235, guid: af52a768163aedf498ee14dd36f13d32, type: 3}
+--- !u!114 &4232580854461159642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705161591398691953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79e87343aefa2147acebff63ff0e49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
